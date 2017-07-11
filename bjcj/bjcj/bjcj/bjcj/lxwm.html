@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+	<title>联系我们</title>
+		 <!--seo优化-->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+      <link rel="shortcut icon" href="img/log.ico"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+     <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=fXxrlyyQp3ncDLBmq93oepeYumyRBghm	"></script>
+
+	</head>
+	<body>
+		<div class="wrap">
+			<!--header-->
+			<div class="header w clearFix">
+				<a href="#" class="ha"><img src="img/logl.png" class="l"/></a>
+				<div class="headr r">
+					<ul class="clearFix hedrul">
+						<li class="kfdh"><span class="kf">客服电话：</span><span class="dh">010-62091000</span></li>
+						<li class="hedimg">	<a href="http://www.weibo.com"><img src="img/gf_03.png"/></a>
+							<a href="http://www.weixin.com"><img src="img/gf_k3.png"/></a></li>
+						<li class="czjt"><span>城建集团</span></li>
+					</ul>
+				</div>
+			</div>
+	        <!--header-->
+	          <!--nav-->
+	       <div class="nav">
+	       	<div class="nav_in w">
+	       		<ul class="clearFix l">
+	       			<li><a href="index.html">首页</a></li>
+	       			<li ><a href="about.html">关于我们</a></li>
+	       			<li><a href="zdxm.html">置业项目</a></li>
+	       			<li><a href="#">企业文化</a></li>
+	       			<li><a href="new.html">新闻中心</a></li>
+	       			<li class="activ"><a href="lxwm.html">联系我们</a></li>
+	       			<li class="bb"><a href="zpxx.html">招聘信息</a></li>
+	       		</ul>
+	       	<form class="r clearFix">
+	       		<input type="text" class="ftext l"/>
+	       		<input type="submit" class="fsub l" value=""/>
+	       	</form>
+	       	</div>
+	       </div>
+	        <!--nav-->
+	        <!--container-->
+	         <div class="container w">
+	         	<!--pictrue-->
+	         	<img src="img/zxsl.png" />
+	         	<!--pictrue-->
+	         	<!--联系我们-->
+	         	<div class="content w clearFix">
+	         		<div class="lxwml l">
+	         			<span class="wm">联系我们</span>
+	         			<ul class="cfloat">
+	         				<li><a href="#" class="on">我们的位置</a></li>
+	         				<li><a href="#">相关链接</a></li>
+	         				</ul>
+	         		</div>
+	         		<div class="lxwmr r zpp">
+	         			<div class="jtjs"><span>我们的位置</span></div>
+	         			<div class="div">
+	         				<div class="peo1">
+	         					<div class="addrss">
+	         						<p>地址：北京市海淀区北太平庄路18号   </p>
+	         					    <p>邮编：100088</p>
+	         					    <p>客户服务热线：010-62091000</p>
+	         					    <p>会议服务热线：010-6209</p>
+	         					    <p>城建大厦租务热线：010-62026611</p>
+	         					    <p>邮箱：postmaster@bjcjzy.com</p>
+	         					     <p>网址：http://www.bjcjzy.com	</p>
+	         					</div>
+	         				<div class="map">
+	         					    <!--百度地图容器-->
+                        <div style="width:679px;height:317px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                       
+
+	         					<!--<img src="img/map_27.png" />-->
+	         				</div>
+	         				</div>
+	         				
+	         			</div>
+	         			
+	         				
+	         	<!--联系我们-->
+	         	</div> 
+	         </div>
+	        </div>
+	        	
+	        <!--container-->
+	        <!--footer-->
+	     <div class="footer">
+	         <div class="fotext w">
+	         <span>北京城建置业有限公司 版权所有</span><span class="jI">京ICP备13010990号-5</span></div>
+	        </div>
+	          <!--footer-->
+		</div>
+		<script>
+			
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMapOverlay();//向地图添加覆盖物
+        }
+        function createMap(){
+            map = new BMap.Map("map");
+            map.centerAndZoom(new BMap.Point(116.377505,39.974831),12);
+        }
+        function setMapEvent(){
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+        }
+        function addClickHandler(target,window){
+            target.addEventListener("click",function(){
+                target.openInfoWindow(window);
+            });
+        }
+        function addMapOverlay(){
+        }
+        //向地图添加控件
+        function addMapControl(){
+            var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(navControl);
+            var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+            map.addControl(overviewControl);
+        }
+        var map;
+        initMap();
+    </script>
+
+	
+	</body>
+</html>
+

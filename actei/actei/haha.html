@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/ini.css" /> 
+				<style>
+			/*icon*/
+			.width{
+	width:960px;
+	margin:0 auto;
+}
+.margin{
+	margin-left:20px;
+}
+.mr{
+	margin-right:10px;
+}
+.mrr{
+	margin-right:20px;
+}
+.header{
+	height:82px;
+	
+}
+.left{
+	float:left;
+}
+.icon{
+	
+	height:86px;
+	background:#cce0f2;
+}
+.icon_cen{
+	padding-top:11px;
+	margin:0 auto;
+}
+.icon_cen .yqlj{
+	margin-right:14px;
+	width:72px;
+	height:64px;
+}
+.icon_ul li{
+	float:left;
+	margin-right:7px;
+}
+.icon_ul li a img{
+	transition:0.3s;
+	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
+}
+.icon_ul li a img:hover{
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	
+}
+/*多加了一个样式* .boxx ，上面的不用管/*/
+.boxx{
+	width:843px;
+	height:68px;
+	overflow:hidden;
+	
+}
+		</style>
+	</head>
+	
+	<body>
+<!--icon-->
+			<div class="icon bai">
+				<div class="width margin icon_cen">
+					<div class="yqlj left margin"><img src="img/yq1.png"/></div>
+					<div class="boxx"><!--//在这里多加了一个<div class="boxx"></div>-->
+						<ul class="icon_ul clearFix left">
+						<li><a href="#"><img src="img/sp1.png"/></a></li>
+						<li><a href="#"><img src="img/sp2.png"/></a></li>
+						<li><a href="#"><img src="img/sp3.png"/></a></li>
+						<li><a href="#"><img src="img/sp4.png"/></a></li>
+						<li><a href="#"><img src="img/sp5.png"/></a></li>
+						<li><a href="#"><img src="img/sp6.png"/></a></li>
+						<li><a href="#"><img src="img/sp7.png"/></a></li>
+					</ul>
+					</div>
+					    <div id="demo2" valign="top">
+                </div>
+					
+				</div>
+			</div>
+			<!--icon-->
+            
+   
+	<script src="js/jquery.js"></script>
+    <script type="text/javascript"> 
+    var speed=30;
+    var demo = $(".boxx");
+    var demo1 = $(".icon_ul");
+    var demo2 = $("#demo2");
+    demo2.html(demo.html());
+    function Marquee(){ 
+        if(demo.scrollLeft()>=demo1.width())
+            demo.scrollLeft(0); 
+        else{
+            demo.scrollLeft(demo.scrollLeft()+1);
+        }
+    } 
+    var MyMar=setInterval(Marquee,speed) 
+    demo.mouseover(function() {
+        clearInterval(MyMar);
+    } )
+    demo.mouseout(function() {
+        MyMar=setInterval(Marquee,speed);
+    } )
+    </script>
+
+
+	</body>
+</html>

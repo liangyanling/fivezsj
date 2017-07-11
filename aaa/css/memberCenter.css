@@ -1,0 +1,510 @@
+/*导航*/
+
+.member-wrap .head-wrap .nav-list li.sliding-shoe {
+	visibility: hidden;
+}
+
+.member-wrap .head-wrap .nav-list li.current a {
+	font-size: 20px;
+	color: #fff;
+}
+
+.member-wrap .head-wrap .nav-list li.current:hover a {
+	font-size: 24px;
+	color: #fff834;
+}
+
+.pic-con {
+	overflow: hidden;
+}
+
+
+/*会员左侧公共样式*/
+
+.menu .pic-con {
+	background-color: #d4e4f0;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.menu .pic-con .pic {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+	text-indent: 0;
+	text-align: center;
+}
+.menu .pic-con .pic img{
+	display: inline;
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.menu .pic-con p {
+	text-align: center;
+}
+
+.menu .pic-con p .name {
+	color: rgb( 18, 107, 171);
+}
+
+.member {
+	margin-bottom: 78px;
+}
+
+
+/*会员右侧公共样式*/
+
+.member .pic {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 17px;
+	text-indent: 0;
+	text-align: center;
+}
+.member .pic img{
+	display: inline;
+	width: 130px;
+	height: auto;
+}
+.member .name {
+	text-indent: 0;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	height: 28px;
+	color: rgb( 0, 26, 44);
+}
+
+.form-item {
+	width: 100%;
+	margin-top: 34px;
+	overflow: hidden;
+}
+
+.form-item:first-child {
+	margin-top: 43px;
+}
+
+.form-item label {
+	width: 86px;
+	float: left;
+	font-size: 14px;
+	color: rgb( 0, 26, 44);
+	text-indent: 0.3em;
+	line-height: 30px;
+	/*text-align: justify;
+    text-align-last: justify;*/
+}
+
+.ipt {
+	float: left;
+	width: 300px;
+	height: 26px;
+	overflow: hidden;
+	border: 2px solid #cde2f0;
+}
+
+.textAr {
+	overflow: auto;
+}
+
+.ipt input,
+.textAr textarea {
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-indent: 0.3em;
+	line-height: 26px;
+}
+
+.textAr textarea {
+	overflow: auto;
+}
+
+
+/*1-会员右侧*/
+
+.mem-1,
+.mem-2 {
+	overflow: hidden;
+}
+
+.mem-1 {
+	width: 660px;
+	margin-top: 33px;
+	margin-left: 63px;
+}
+
+.mem-1 .form-item {
+	margin-top: 37px;
+	overflow: visible;
+}
+
+.mem-1 .form-item:first-child {
+	margin-top: 43px;
+}
+
+
+/*radio for common-use*/
+
+.rdo {
+	float: left;
+}
+
+.rdo div {
+	height: 30px;
+	overflow: hidden;
+	float: left;
+	margin-right: 14px;
+	font-size: 14px;
+	color: rgb( 0, 26, 44);
+}
+
+.rdo span {
+	float: left;
+	text-indent: 0;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+
+.rdo i {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url(../img/radio.png) no-repeat;
+	background-position: -25px -1px;
+	cursor: pointer;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+.rdo i.on {
+	background-position: -1px -1px;
+}
+
+.rdo input {
+	/*opacity:0;*/
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+/*性别*/
+
+.gender-con label {
+	width: 100px;
+}
+
+.gender-con .rdo div {
+	width: 74px;
+}
+
+
+/*提交、重置按钮*/
+
+.form-list .btnCon {
+	margin-top: 96px;
+}
+
+.btnCon .btn {
+	float: right;
+	width: 122px;
+	height: 36px;
+	font-family: "Microsoft YaHei";
+	background: url(../img/confirm-bg.png) no-repeat 0 0;
+	font-size: 20px;
+	color: #ff1200;
+	line-height: 100%;
+	margin-right: 180px;
+	display: block;
+	text-indent: 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btnCon .btn:first-child {
+	margin-left: 180px;
+	margin-right: 0;
+	float: left;
+}
+
+
+/*2-会员右侧*/
+
+
+/*select*/
+
+.select {
+	float: left;
+}
+
+.slct {
+	width: 106px;
+	height: 26px;
+	border: 2px solid #cde2f0;
+	text-indent: 0.3em;
+	overflow: hidden;
+}
+
+
+/*.slct select{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+    float: left;
+    -moz-appearance:none;   
+    -webkit-appearance:none;
+    appearance:none;   
+
+}
+
+.slct select::-ms-expand { display: none; }*/
+
+
+/*start模拟select*/
+
+.divSelect {
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.s {
+	width: 106px;
+	border: 2px solid #cde2f0;
+	background-color: #fff;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	border-top: none;
+	display: none;
+}
+
+.s div {
+	text-indent: 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.s div:hover {
+	color: #126bab;
+	background-color: #cde2f0;
+}
+
+
+/*end模拟select*/
+
+.mem-1 .select label {
+	text-indent: 2em;
+}
+
+.slct-angle {
+	float: right;
+	width: 26px;
+	height: 26px;
+	background-color: #cde2f0;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}
+
+.slct-angle .angle {
+	position: absolute;
+	border-top: 12px solid #fff;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	left: 7px;
+	top: 8px;
+}
+
+
+/*item-l*/
+
+.item-l {
+	float: left;
+}
+
+.item-l .ipt {
+	float: left;
+	width: 250px;
+	width: 246px!important;
+}
+
+.mem-1 .long {
+	width: 512px;
+}
+
+.textAr label {
+	line-height: 200px;
+}
+
+.textAr div {
+	float: left;
+	width: 512px;
+	height: 200px;
+}
+
+.form-list .job .ipt {
+	width: 512px;
+}
+
+
+/*item-r*/
+
+.item-r .ipt {
+	float: left;
+	width: 250px;
+	width: 246px!important;
+}
+
+.item-r {
+	float: right;
+}
+
+
+/*2-会员右侧*/
+
+.mem-2 {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+
+/*3-会员右侧*/
+
+.mem-3 {
+	margin-top: 56px;
+	margin-left: 74px;
+	margin-right: 110px;
+}
+
+.mem-3 .infor-list div {
+	margin-bottom: 33px;
+}
+
+.mem-3 .infor-list span {
+	float: left;
+	background-color: rgb( 15, 104, 175);
+	width: 10px;
+	height: 10px;
+	margin-top: 10px;
+	margin-right: 16px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.mem-3 .infor-list a {
+	width: 564px;
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	float: left;
+	text-indent: 0;
+	color: #5b5b5b;
+}
+
+
+/*下载展示区及问答区域*/
+.loadW span {
+	float: left;
+	width: 70px;
+	text-indent: 0;
+	font-size: 14px;
+	color: rgb( 0, 26, 44);
+}
+.loadW p {
+	float: left;
+	width: 500px;
+	text-indent: 0;
+	font-size: 14px;
+	color: rgb( 0, 26, 44);
+}
+
+.loadW table {
+	border: none;
+	width: 100%;
+	/*table-layout: fixed;*/
+}
+
+.loadW table td {
+	border: none;
+	font-size: 14px;
+	color: rgb( 0, 26, 44);
+	text-indent: 0em;
+	text-align: left;
+	height: 40px;
+	vertical-align: middle;
+}
+
+.loadW table td.tit {
+	width: 66px;
+}
+
+.loadW table td.txt {
+	width: 490px;
+}
+
+.loadW table td.link {
+	width: 75px;
+}
+
+.loadW .btnCon .btn {
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	float: none;
+	margin: 0 auto;
+}
+.loadW table td p{
+	width: 100%;
+}
+.qaW .form-item label {
+	width: 100%;
+	float: none;
+	display: block;
+}
+
+.qaW .rdo {
+	float: none;
+	margin-left: 12px;
+}
+
+.qaW .rdo div {
+	float: none;
+	margin-right: 0;
+	height: auto;
+}
+
+.qaW .form-item:first-child {
+	margin-top: 10px;
+}
+
+.qaW .rdo p {
+	width: 586px;
+	float: left;
+	text-indent: 0;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+
+.qaW .rdo input {
+	float: left;
+}
+
+.qaW .form-item label.f {
+	float: left;
+	width: 84px;
+}

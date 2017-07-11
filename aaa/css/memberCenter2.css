@@ -1,0 +1,158 @@
+table tr td {
+	text-indent: 0em;
+	text-align: center;
+	vertical-align: middle!important;
+	height: 40px;
+	overflow: hidden;
+}
+
+.tb tr td {
+	border: 2px solid #cde2f0;
+	font-size: 14px;
+	color: rgb( 0, 26, 44);
+}
+.no-bor tr td{
+	border-top: none;
+}
+.mem-2 .item-l, .mem-2 .item-r{
+	width: 347px!important;
+}
+.mem-2 .textAr label {
+	line-height: 100px;
+}
+
+.mem-2 .textAr div {
+	height: 100px;
+}
+.tableW .rdo {
+	float: none;
+}
+.tableW .rdo div {
+	margin-right: 0;
+	width: 54px;
+}
+
+.tableW .rdo div:first-child {
+	margin-left: 4px;
+}
+
+.tableW .rdo i {
+	margin-right: 0;
+}
+
+.tableW .rdo span {
+	font-size: 14px;
+}
+/*作品*/
+.w .rdo {
+	width: 600px;
+}
+/*推荐*/
+.recom .rdo{
+	width: 260px!important;
+}
+.recom .rdo div{
+	width: 100px!important;
+}
+/*name*/
+
+.n {
+	width: 60px;
+}
+
+
+/*gender*/
+
+.g {
+	width: 168px;
+}
+
+
+/*age*/
+
+.a {
+	width: 50px;
+}
+
+
+/*job*/
+
+.j {
+	width: 160px;
+}
+
+
+/*tel*/
+
+.t {
+	width: 100px;
+}
+/*add*/
+.ad, .de{
+	width: 38px;
+}
+.tableW table {
+	border: none;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.tableW .add, .tableW .del{
+	cursor: pointer;
+	font-size: 18px;
+	color: rgb( 0, 26, 44);
+}
+.no-del .del, .no-add .add{
+	cursor:not-allowed;
+}
+.tableW .title {
+	width: 62px;
+}
+
+.tableW .ipt {
+	width: 100%;
+	border: none;
+}
+.tableW .ipt input{
+	text-align: center;
+	text-indent: 0;
+}
+
+.imgShow,
+.fileShow {
+	margin-top: 20px;
+	margin-left: 84px;
+}
+
+.imgShow img {
+	width: auto;
+	height: 136px;
+}
+
+.writingImg .ipt:first-child {
+	width: 512px;
+}
+
+.writingImg .btnCon {
+	float: left;
+	margin: 0;
+}
+
+.writingImg .btnCon .btn {
+	width: 68px;
+	height: 28px;
+	float: left;
+	font-size: 14px;
+	margin: 0;
+	margin-right: 4px;
+}
+
+.short {
+	width: 372px;
+	margin-left: 86px;
+	border-top: none;
+}
+
+
+
+

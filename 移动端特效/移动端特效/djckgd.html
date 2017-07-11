@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <title>导航条效果</title>
+    <meta name="keywords" content="尚学堂程序员培训-Java培训，JavaEE培训，Android培训，大数据云计算培训，Web前端培训，UI设计培训，iOS培训，H5+PHP全栈工程师，VR/AR培训，程序员培训">
+    <meta name="description" content="尚学堂专注程序员培训,0元入学,先就业后付款，Java培训、JavaEE培训、Android培、大数据培训、Web前端培训、UI设计培训、iOS培训、H5+PHP全栈工程师、互联网架构培训、产品经理培训、VR/AR培等IT培训服务-实战化教学领跑品牌">
+     <link rel="stylesheet" href="css/index.css" />
+		<script src="js/rem.js"></script>
+		<style>
+			.djbox{
+				height:auto;
+				padding:0.2rem;
+				background:red;
+			}
+			.box_in ul{
+				margin-right:-0.3rem;
+			}
+			.box_in ul li{
+				width: 1.7rem;
+    height: 2.1rem;
+    background: #fff;
+    text-align: center;
+    margin: 0 .1rem .1rem 0;
+    float: left;
+    background:red;
+			}
+				.box_in ul li a{
+				width: 1.7rem;
+    height: 2.1rem;
+   display:block;
+			}
+			.box{
+				width:100%;
+			}
+			.yc{
+				height: .25rem;
+    line-height: .25rem;
+    font-size: .2rem;
+    text-align: center;
+    color: #979696;
+			}
+			.boxnon li{
+				width: 1.7rem;
+    height: 2.1rem;
+			}
+		</style>
+	</head>
+	<body>
+		
+				<div class="djbox">
+			<div class="box_in">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">1</a></li>
+					<div class="clear"></div>
+				</ul>
+				<ul class="boxnon" style="display:none">
+					<li><a href="#">3</a></li>
+					<li><a href="#">3</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		<div class="yc">点击隐藏 </div>
+				</div>
+		
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function(){
+			   $(".yc").click(function(){
+      /*  $(this).html($(".boxnon").is(":hidden")?"点击隐藏":"点击查看更多");*/
+     $(this).html($(".boxnon").is(":hidden")?"点击隐藏":"点击查看更多");
+        $(".boxnon").slideToggle();
+    });
+		})
+	</script>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+.read-wrap .read-list, .read-wrap .read-intro{
+	overflow: hidden;
+}
+.read-wrap  .read-intro ul{
+	width: 100%;
+}
+.read-wrap  .read-intro ul li{
+	width: 100%;
+    height: 222px;	
+	position: relative;
+	text-indent: 0!important;
+	margin-left: 40px;
+}
+.read-wrap .read-intro ul li:first-child {
+    margin-top: 20px;
+}
+.read-wrap  .read-intro ul li .book-img{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-top: 18px;
+	margin-right: 37px;
+	text-align: center;
+}
+.read-wrap  .read-intro ul li .book-img img{
+	width: 150px;
+	height: 150px;
+}
+.read-wrap  .read-intro ul li .book-img .btnCon{
+	width: 100%;
+	margin-top: 10px;
+}
+.read-wrap  .read-intro ul li .book-img .btn{
+	width: 68px;
+    height: 28px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    background: url(../img/confirm-bg.png) no-repeat 0 0;
+	color: #ff1200;
+    line-height: 100%;
+    display: block;
+    text-indent: 0;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.read-wrap  .read-intro ul li .book-intro{
+	width: 510px;
+	float: left;
+    margin-top: 14px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 93, 91, 91 );
+}
+.read-wrap  .read-intro li .book-intro div{
+}
+.read-wrap  .read-intro li .book-intro div span{
+	float: left;
+	width: 70px;
+	height: 24px;
+	line-height: 24px;
+}
+.read-wrap  .read-intro li .book-intro div a{
+	color: rgb( 93, 91, 91 );
+	float: left;
+	width: 430px;
+	line-height: 24px;
+	
+}
+.read-wrap  .read-intro li i{
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 80px;
+    width: 510px;
+    height: 2px;
+    background-color: rgb( 198, 223, 241 );
+	
+}
+.read-wrap  .read-intro li:first-child i{
+	display: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!--删除默认的苹果工具栏和菜单栏。-->
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+        <link rel="stylesheet" href="css/simple.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
+  <script>
+        /*相当于百分比了，所以代码就可设计的东西以用*/
+        function resetFont(){
+         var HTML=document.getElementsByTagName('html')[0];
+         var ww=document.documentElement.clientWidth;
+         var scale=ww/750;//640是设计图psd的宽度
+         HTML.style.fontSize=100*scale+'px';
+         }
+         resetFont();
+         window.onresize=function (){
+         resetFont();
+         }
+     
+    </script>
+	</head>
+	<body>
+		<div class="wrap grid">
+			<!--img-->
+			<div class="header">
+				<img src="img/header.jpg" />
+			</div>
+			<!--body-->
+			<div class="containea ">
+				<div class="content">
+					<div class="box">
+						<div class="box_t">
+							<span class="hdgz">活动介绍</span>
+						</div>
+						<div class="box_b">
+							<p>活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则
+							活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动
+							活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动
+						</p>
+						</div>
+					</div>
+				<div class="box">
+						<div class="box_t">
+							<span class="hdgz">评选规则</span>
+						</div>
+						<div class="box_b">
+							<p>活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则
+							活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动
+							活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动</p>
+								<p>活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则
+							活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动
+							活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动</p>
+						</div>
+					</div>
+					<div class="ftp">
+							<div class="tp"><a href="pp.html">十大品牌评选活动</a></div>
+					<div class="tp"><a href="cplb.html">名优产品投票</a></div>
+				<!--	<div class="tp"><a href="cxkh.html">参选口号</a></div>-->
+					</div>
+				
+				</div>
+			    
+			</div>
+		</div>
+	</body>
+</html>

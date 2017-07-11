@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./js/function.js"></script>
+	<script src="./js/animate.js"></script>
+	<title>无缝轮播</title>
+</head>
+<style type="text/css">
+	.banner{
+		width:100%;
+		height: 454px;
+		position: relative;
+		margin:20px auto;
+		overflow: hidden;
+	}
+	.banner a{
+		position: absolute;
+	}
+	.banner img{
+		width:100%;
+	}
+	.btn{
+		position: absolute;
+		width: 100%;
+		height:60px;
+		top:50%;
+		margin-top: -30px;
+		z-index: 20;
+		cursor: pointer;
+	/*	display: none;*/
+	}
+	.btnL{
+		width: 40px;
+		height: 60px;
+		font-size: 20px;
+		font-weight:bold;
+		color:black;
+		float: left;
+		line-height: 60px;
+		text-align: center;
+		background: #ccc;
+		opacity: 0.9;
+		display: none;
+	}
+	.btnR{
+		width: 40px;
+		height: 60px;
+		font-size: 20px;
+		font-weight:bold;
+		color:black;
+		float: right;
+		line-height: 60px;
+		text-align: center;
+		background: #ccc;
+		opacity: 0.9;
+		display: none;
+	}
+	.yuan{
+		width: 140px;
+		height: 16px;
+		position: absolute;
+		left: 50%;
+		margin-left: -70px;
+		bottom:10px;
+		z-index: 99999;
+		cursor:pointer;
+	}
+	.btnspan{
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		margin: 0 2px;
+		float: left;
+		background: #ccc;
+	}
+</style>
+<body>
+	<div class="banner">
+		<a href="#" class="bannera"><img src="./image/banner1.jpg"></a>
+		<a href="#" class="bannera"><img src="./image/banner2.jpg"></a>
+		<a href="#" class="bannera"><img src="./image/banner3.jpg"></a>
+		<a href="#" class="bannera"><img src="./image/banner4.jpg"></a>
+		<a href="#" class="bannera"><img src="./image/banner5.jpg"></a>
+		<a href="#" class="bannera"><img src="./image/banner6.jpg"></a>
+		<a href="#" class="bannera"><img src="./image/banner7.jpg"></a>
+		<div class="btn">
+			<div class="btnL">&lt;</div>
+			<div class="btnR">&gt;</div>
+		</div>
+		<div class="yuan">
+			<span class="btnspan"></span>
+			<span class="btnspan"></span>
+			<span class="btnspan"></span>
+			<span class="btnspan"></span>
+			<span class="btnspan"></span>
+			<span class="btnspan"></span>
+			<span class="btnspan"></span>
+		</div>
+	</div>
+<script type="text/javascript">
+window.onload=function(){
+	var wins=document.getElementsByClassName("banner")[0];
+	var imgs=document.getElementsByClassName("bannera");
+	console.log(imgs)
+	var btnL=document.getElementsByClassName("btnL")[0];
+	var btnR=document.getElementsByClassName("btnR")[0];
+	var spans=document.getElementsByClassName("btnspan");
+
+	var num=0;//下一张
+	var index=0;//当前张
+	var flag=true;//消除bug
+    var t;
+    spans[0].style.background="red";
+	var imgW=parseInt(getStyle(imgs[0],"width"));
+	for(var i=0;i<imgs.length;i++){
+		if(i==0){
+			continue;
+		}
+		imgs[i].style.left=imgW+"px";
+	}
+var	t=setInterval(move,1000);
+wins.onmouseover=function(){
+	clearInterval(t)
+	btnL.style.display="block";
+    btnR.style.display="block";
+}
+wins.onmouseout=function(){
+	t=setInterval(move,1000);
+    btnL.style.display="none";
+    btnR.style.display="none";
+}
+
+
+//自动播
+	function move(){
+		if(!flag){
+			return;
+		}
+		flag=false;
+		num++;
+		if(num==imgs.length){
+			num=0;
+		}
+		imgs[num].style.left=imgW+"px";
+		animate(imgs[index],{left:-imgW},600,function(){
+			flag=true;
+		})
+		animate(imgs[num],{left:0},600)
+		for(var i=0;i<imgs.length;i++){
+			spans[i].style.background="#ccc"; 
+		}
+		    spans[num].style.background="red";
+		    index=num;
+	}
+
+
+//圆点跟着动
+for(var i=0;i<spans.length;i++){
+    spans[i].index=i;
+   spans[i].onclick=function(){
+     if(index==this.index){
+      return;                                 
+     }
+      for(var i=0;i<imgs.length;i++){
+      spans[i].style.background="#ccc";
+    }
+      spans[this.index].style.background="red";
+      imgs[this.index].style.left=imgW+"px";
+      
+      animate(imgs[index],{left:-imgW},600 );
+      animate(imgs[this.index],{left:0},600);
+      index=num=this.index;
+    }
+}
+
+
+btnR.onclick=function(){
+	move();
+}
+btnL.onclick=function(){
+	moveL();
+}
+function moveL(){
+	if(!flag){
+			return;
+		}
+		flag=false;
+		num--;
+		if(num<0){
+			num=imgs.length-1;
+		}
+		imgs[num].style.left=-imgW+"px";
+		animate(imgs[index],{left:imgW},600,function(){
+			flag=true;
+		})
+		animate(imgs[num],{left:0},600)
+		for(var i=0;i<imgs.length;i++){
+			spans[i].style.background="#ccc"; 
+		}
+		    spans[num].style.background="red";
+		    index=num;
+}
+
+}
+</script>
+</html>

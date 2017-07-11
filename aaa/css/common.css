@@ -1,0 +1,304 @@
+.index-wrap .head-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/*头部登录注册*/
+
+.head-wrap .login-wrap {
+	width: 100%;
+	background-color: rgba( 14, 102, 165, 0.349);
+	box-shadow: 2.5px 4.33px 16px 0px rgba( 26, 16, 9, 0.5);
+	-webkit-box-shadow: 2.5px 4.33px 16px 0px rgba( 26, 16, 9, 0.5);
+	-ms-box-shadow: 2.5px 4.33px 16px 0px rgba( 26, 16, 9, 0.5);
+	-moz-box-shadow: 2.5px 4.33px 16px 0px rgba( 26, 16, 9, 0.5);
+	-o-box-shadow: 2.5px 4.33px 16px 0px rgba( 26, 16, 9, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.head-wrap .login-container {
+	width: 1084px;
+	height: 52px;
+	line-height: 52px;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+
+.head-wrap .login-container .lgn-rsgn {
+	float: right;
+}
+
+.head-wrap .login-container form {
+	float: right;
+}
+
+.head-wrap .login-container form div {
+	float: left;
+	margin-right: 15px;
+}
+
+.head-wrap .login-container form span {
+	margin-right: 4px;
+}
+
+.head-wrap .login-container input {
+	width: 174px;
+	background-color: transparent;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+.head-wrap .login-container a {
+	color: #fff;
+}
+
+
+/*banner*/
+
+.head-wrap .banner-wrap {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.head-wrap .banner-wrap a {
+	position: relative;
+}
+
+.head-wrap .banner-wrap a img {
+	display: block;
+	width: auto;
+	height: 500px;
+}
+
+
+/*头部导航*/
+
+.head-wrap .nav-wrap {
+	width: 100%;
+	height: 62px;
+	background: url(../img/nav-bg.png) no-repeat;
+}
+
+.head-wrap .nav-wrap .nav-container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.head-wrap .nav-list {
+	width: 100%;
+	height: 62px;
+	position: relative;
+}
+
+.head-wrap .nav-list li {
+	float: left;
+	width: 166.6px;
+	height: 58px;
+	text-align: center;
+	position: relative;
+}
+
+.head-wrap .nav-list li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 62px;
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	color: #fff;
+	text-shadow: 2.5px 4.33px 5px rgb( 26, 16, 9);
+	-moz-text-shadow: 2.5px 4.33px 5px rgb( 26, 16, 9);
+	-webkit-text-shadow: 2.5px 4.33px 5px rgb( 26, 16, 9);
+	-ms-text-shadow: 2.5px 4.33px 5px rgb( 26, 16, 9);
+	-moz-text-shadow: 2.5px 4.33px 5px rgb( 26, 16, 9);
+}
+
+.head-wrap .nav-list li.sliding-shoe {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 166.6px;
+	height: 4px;
+	background-color: #fff834;
+}
+
+.head-wrap .nav-list li.current a,
+.head-wrap .nav-list li:hover a {
+	font-size: 24px;
+	color: #fff834;
+}
+
+
+/*内容*/
+
+.content-wrap {
+	width: 100%;
+	overflow: hidden;
+	background-color: #c6dff1;
+}
+
+.content-wrap .content-container {
+	width: 1000px;
+	margin: 9px auto 11px;
+}
+
+
+/*头名*/
+
+.content-wrap .title-wrap {
+	overflow: hidden;
+	position: relative;
+	z-index: 9998;
+	width: 100%;
+	height: 73px;
+	text-align: center;
+}
+
+.content-wrap .title-container {
+	background-color: #fff;
+	height: 63px;
+	box-shadow: 0px 4px 10px 0px rgba( 5, 59, 111, 0.39);
+	-webkit-box-shadow: 0px 4px 10px 0px rgba( 5, 59, 111, 0.39);
+	-ms-box-shadow: 0px 4px 10px 0px rgba( 5, 59, 111, 0.39);
+	-moz-box-shadow: 0px 4px 10px 0px rgba( 5, 59, 111, 0.39);
+	-o-box-shadow: 0px 4px 10px 0px rgba( 5, 59, 111, 0.39);
+}
+
+.content-wrap .title-wrap .angle-left {
+	border-left: 442px solid #c6dff1;
+	border-top: 35px solid transparent;
+	border-bottom: 30px solid transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.content-wrap .title-wrap .angle-right {
+	border-right: 442px solid #c6dff1;
+	border-top: 35px solid transparent;
+	border-bottom: 30px solid transparent;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.content-wrap .title-wrap h3 {
+	font-size: 24px;
+	font-family: "Microsoft YaHei";
+	color: #000;
+	line-height: 1.25em;
+	padding-top: 10px;
+}
+
+.content-wrap .title-wrap h4 {
+	font-size: 24px;
+	font-family: "Vijaya";
+	color: rgb( 4, 57, 108);
+	line-height: 14px;
+}
+
+
+/*tab选项卡*/
+
+.tab {
+	min-height: 300px;
+}
+
+.menu {
+	height: 100%;
+}
+
+.intro {
+	height: 100%;
+}
+
+.content-wrap .main-content {
+	margin-top: -10px;
+}
+
+.content-wrap .tab .menu {
+	width: 226px;
+	float: left;
+	background-color: #d4e4f0;
+}
+
+.content-wrap .tab .menu li {
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 0, 26, 44);
+	cursor: pointer;
+	color: rgb( 18, 107, 171);
+	padding-left: 25px;
+	padding-right: 35px;
+}
+
+.content-wrap .tab .menu h4 {
+	border-bottom: 2px solid #fff;
+}
+
+.content-wrap .tab .menu li.active {
+	background-color: #fff;
+	color: rgb( 0, 26, 44);
+}
+
+.content-wrap .tab .menu li.active h4 {
+	border: none;
+}
+
+.content-wrap .tab .intro {
+	width: 774px;
+	background-color: #fff;
+	float: right;
+	overflow: hidden;
+	position: relative;
+}
+
+.content-wrap .tab .intro ul {
+	background-color: #fff;
+	float: right;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+.content-wrap .intro ul.active {
+	display: block;
+}
+
+.content-wrap .tab .intro ul li {
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 93, 91, 91);
+	line-height: 2.143em;
+	text-indent: 2em;
+}
+
+
+/*页脚*/
+
+.footer-wrap {
+	background-color: #126bab;
+	padding-top: 12px;
+	padding-bottom: 9px;
+}
+
+.footer-wrap p {
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 255, 255, 255);
+	line-height: 2.5em;
+	text-align: center;
+}

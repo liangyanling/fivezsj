@@ -1,0 +1,205 @@
+.form-list {
+	overflow: hidden;
+}
+
+.content-wrap .main-content {
+	overflow: hidden;
+}
+
+.loginW .content-container {
+	background-color: #fff;
+}
+
+.loginW .loginCon {
+	width: 716px;
+	margin: 0 auto 28px;
+	overflow: hidden;
+}
+
+.loginW .form-list .btnCon {
+	margin-top: 82px;
+}
+/*button*/
+.loginW .btnCon .btn {
+	float: none;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background: url(../img/login.png) no-repeat 0 0;
+	font-size: 24px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 41, 68);
+	line-height: 40px;
+}
+/*label*/
+.loginW .form-item label {
+	width: 190px;
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 57, 108);
+	line-height: 38px;
+	text-indent: 0;
+	text-align: right;
+}
+
+.loginW .ipt {
+	width: 412px;
+	height: 34px;
+}
+
+.loginW .ipt input {
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 184, 184, 184);
+	line-height: 34px;
+}
+/*form p*/
+.loginW form p {
+	text-align: right;
+	margin-top: 46px;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+}
+
+.loginW form p a {
+	display: inline-block;
+	color: rgb( 127, 166, 194);
+	line-height: 30px;
+}
+/*go to resign*/
+.toResn {
+	margin-right: 62px;
+}
+/*go to find password*/
+.toPasW {
+	margin-right: 117px;
+}
+
+.loginW .ipt.yzmIpt {
+	width: 200px;
+}
+/*验证码预留区域*/
+.yzm {
+	float: left;
+	width: 150px;
+	height: 38px;
+	margin-left: 20px;
+	background-color: lightblue;
+}
+
+.resgnW .form-list .btnCon {
+	margin-top: 87px;
+}
+/*user name*/
+.user {
+	float: left;
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 57, 108);
+	line-height: 38px;
+}
+/*user need to know*/
+.need h4 {
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 57, 108);
+	line-height: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 18px;
+}
+
+.need p {
+	width: 544px;
+	margin-left: 100px;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 127, 166, 194);
+	line-height: 30px;
+	text-indent: 2em;
+	padding-bottom: 8px;
+}
+/*找回密码进度条*/
+.findPasw {
+	height: 45px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.findPasw h4 {
+	float: left;
+	font-size: 24px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 57, 108);
+	line-height: 48px;
+}
+
+.findPasw .progress {
+	width: 588px;
+	height: 40px;
+	float: left;
+	position: relative;
+	left: 32px;
+}
+
+.findPasw .progress i {
+	width: 588px;
+	height: 14px;
+	position: absolute;
+	bottom: -4px;
+	left: 10px;
+	background: url(../img/login.png) repeat-x 0 -94px;
+}
+
+.findPasw .progress div {
+	float: left;
+	width: 196px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	position: relative;
+	left: 6px;
+}
+
+.findPasw .progress div.active {
+	background: url(../img/login.png) repeat-x 0 -52px;
+}
+
+.findPasw .progress div span {
+	position: absolute;
+	left: -20px;
+	top: 8px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 57, 108);
+	background-color: #fff;
+	border: 2px solid rgb( 198, 223, 241);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 20px;
+	z-index: 555;
+}
+
+.findPasw .progress div.active span {
+	background-color: rgb( 7, 83, 143);
+	color: #fff;
+}
+
+.findPasw .progress div em {
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	color: rgb( 4, 57, 108);
+	text-align: center;
+	line-height: 45px;
+}
+
+.psw .form-list .btnCon {
+	margin-top: 60px;
+}

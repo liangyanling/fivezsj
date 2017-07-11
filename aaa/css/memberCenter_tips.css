@@ -1,0 +1,109 @@
+.content-wrap .tab .intro ul li.vis {
+	overflow: visible;
+	margin-bottom: 100px;
+}
+
+.loadW {
+	border-top: 1px solid rgb( 198, 223, 241);
+	padding-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.loadW:first-child {
+	border-top: none;
+}
+
+.loadW .mar_l {
+	width: 80px;
+	float: left;
+	margin-right: 20px;
+}
+
+.loadW .mar_l .btn {
+	margin-left: 0;
+}
+
+.loadW table td {
+	position: relative;
+}
+.loadW img{
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+.loadW .ld{
+	float: right;
+	width: 500px;
+}
+/*tips*/
+
+.tipsW {
+	width: 660px;
+}
+.tipsW .status div{
+	line-height: 40px;
+}
+.tipsW .status em{
+	float: left;
+	width: 70px;
+	text-indent: 0;
+    font-size: 14px;
+    color: rgb( 0, 26, 44);
+}
+.tipsW .status .i {
+	float: left;
+	margin-top: 10px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: rgb( 198, 223, 241);
+	border-radius: 50%;
+	color: rgb( 18, 107, 171);
+	text-align: center;
+	cursor: pointer;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 0;
+	position: relative;
+}
+.tipsW .status .i div{
+	position: absolute;
+    left: 30px;
+	width: 320px;
+	border: 1px solid rgb( 198, 223, 241);
+	background-color: #fdfde8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 666;
+	overflow: auto;
+	display: none;
+	
+}
+.tipsW .status .i div.over{
+	height: 180px;
+	overflow: auto;
+}
+.tipsW .status .i div p{
+	padding: 10px 20px;
+	width: auto;
+	text-indent: 2em;
+	font-weight: normal;
+	line-height: 24px;
+	text-align: left;
+}
+/*三角*/
+.tipsW .status .i i{
+	position: absolute;
+	top: 0;
+	left: 21px;
+	width: 10px; 
+	height: 20px; 
+	background: url(../img/i.png) no-repeat -1px -1px;
+	z-index: 999;
+	display: none;
+}

@@ -1,0 +1,45 @@
+/*多加了一个样式* 
+.boxx{
+	width:800px;
+	height:64px;
+	overflow:hidden;
+	position:relative;
+	
+}
+			.icon_ul{
+				width:10000px;
+				position: absolute;
+			}
+<!--//在这里多加了一个<div class="boxx"></div>-->
+	<script type="text/javascript">
+			/* window.onload比 $(function(){}) 加载的更晚一些，这样那些宽度的计算在Chrome中就可以准确计算了*/
+			window.onload = function(){
+
+				/*计算一个segment的宽度*/
+
+				var segmentWidth = 0;
+				$(".boxx .icon_ul  li").each(function(){
+					segmentWidth+= $(this).outerWidth(true);
+				});
+
+				$(".boxx .icon_ul  li").clone().appendTo($(".boxx .icon_ul"));
+
+				run(6000);
+
+				function run(interval){
+					$(".boxx .icon_ul").animate({"left":-segmentWidth}, interval,"linear",function(){
+						$(".boxx .icon_ul").css("left",0);
+						run(6000);
+					});
+				}
+
+				$(".boxx").mouseenter(function(){
+					$(".boxx .icon_ul").stop();
+				}).mouseleave(function(){
+					var passedCourse = -parseInt($(".boxx .icon_ul").css("left"));
+					var time = 6000 * (1 - passedCourse/segmentWidth);
+					run(time);
+				});
+			};
+
+		</script>
